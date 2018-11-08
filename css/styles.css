@@ -2,69 +2,66 @@ body{
     padding: 0;
     margin: 0;
 }
-.container{
-    background-color: brown;
-    display: flex;
-    justify-content: space-evenly; 
-
-   
-   
-}
-.container ul{
-    display: flex;
-     
+#navbar{
+    background-color:#d9240e;
+    
     
 }
-.container ul li{
+.navbar-wrappar{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+.navbar-wrappar .logo{
+    flex-wrap: wrap;
+}
+.navbar-wrappar ul{
+   flex-wrap: wrap;
+}
+.navbar-wrappar ul li{
     display: inline-flex;
     color: white;
     text-transform: capitalize;
-    padding: 1rem;
+    padding: 0.8rem;
     word-spacing: 0.5rem;
     word-spacing: 3px;
     font-family: cursive;
     cursor: pointer;
 }
-.container ul li:hover{
+.navbar-wrappar ul li:hover{
     color: black;
     transition-duration: 1s;
 }
-@media all and (max-width: 800px){
-    .container ul{
-    justify-content: flex-start;
-    
-}
-}
-
-@media all and (max-width: 500px){
-    .container ul{    
-    flex-direction: column;
-    
-}
-}
-.container2{
+.container-wrappar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     /* height: 31rem;
     align-items: center; */
     background-color: #e4e2e2;
+    padding: 5rem 13rem;
    
 }
-.container2 .box1{
-    
-    padding: 5.6rem 0;
+.container-wrappar img{
+    height: 12rem;
+    width: 12rem;
+}
+.container-wrappar .box1{
+   flex-basis: 5rem; 
+    padding: 0.5rem;
     
 }
-.container2 .box1 h2{
+.container-wrappar .box1 h2{
     text-transform: capitalize;
     padding-left: 0.5rem;
-    height: 8px;
+    height: 1rem;
     }
-.container2 .box1 p{
+.container-wrappar .box1 p{
     color: #aba7a7;
     padding-left: 0.5rem;
 }
-.container2 .box1 button {
+.container-wrappar .box1 button {
     background-color: #ff7657;
     height: 2rem;
     width: 5.5rem;
@@ -76,23 +73,12 @@ body{
     cursor: pointer;
     
 }
-.container2 .box1 button:hover{
+.container-wrappar .box1 button:hover{
     
     transition-duration: 1s;
     border: 1px solid #fc3e14;
+    transition-duration: 1s;
 }
-@media all and (max-width: 800px){
-    .container2 {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 8rem;
-}
-}
-@media all and (max-width: 500px){
-    .container2 {
-        flex-direction: column;
-        align-items: center;
-    }}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -108,14 +94,47 @@ body{
         width: 3rem;
         padding: 1rem;
     }
-    @media all and (max-width: 800px){
-        .footer{
-            justify-content: center
-            
-        }}
-    @media all and (max-width: 500px){
-        .footer{
-            flex-direction: column;
-            align-items: center;
-            
-        }}
+/* @media all and (max-width: 1024px){
+.container-wrappar{
+    padding: 2rem 13rem;
+}
+} */
+
+@media all and (max-width: 800px){
+    .navbar-wrappar{
+    flex-wrap: wrap;
+}
+    .container-wrappar {
+    flex-wrap: wrap;
+    padding: 3rem 11rem;
+}
+    .footer{
+    justify-content: center;
+    
+}
+}
+    
+@media all and (max-width: 500px){
+   .navbar-wrappar{
+       flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-wrappar ul li{
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+    }
+  
+    .container-wrappar {
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+      
+   
