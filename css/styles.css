@@ -40,7 +40,7 @@ body{
     /* height: 31rem;
     align-items: center; */
     background-color: #e4e2e2;
-    padding: 5rem 13rem;
+    padding: 5rem 6rem;
    
 }
 .container-wrappar img{
@@ -106,7 +106,7 @@ body{
 }
     .container-wrappar {
     flex-wrap: wrap;
-    padding: 3rem 11rem;
+    padding: 3rem 5rem;
 }
     .footer{
     justify-content: center;
